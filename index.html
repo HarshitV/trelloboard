@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Trello Board</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div>
+			<div class="board-text">Trello Board</div>
+			<div class="right-button"><button id="addList" class="button">Add List</button></div>
+			<div id='boardlists' class="board-lists">
+				<div id="modal1" class="modal">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<label>Title</label>
+						<input type="text" id="title" />
+						<label>Content</label>
+						<input type="text" id="content" />
+						<button class="submit-button" id="ok">ok</button>
+					</div>
+				</div>
+				<div id="modal2" class="modal">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<label>List Name</label>
+						<input onfocus=this.value='' type="text" id="listName" />
+						<button class="submit-button" id="ok2">ok</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src='trello.js'></script>
+	</body>
+</html>
